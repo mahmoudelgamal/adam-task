@@ -3,6 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="./images/favicon/site.webmanifest">
   <title>Adam | Home</title>
   <link rel="stylesheet" href="main.css">
 </head>
@@ -22,16 +26,16 @@
       <!-- nav links -->
       <ul class="navigation__nav">
           <li class="navigation__item">
-              <a href="#" class="navigation__link active">features</a>
+              <a href="#header" class="navigation__link active">features</a>
           </li>
           <li class="navigation__item">
-              <a href="#" class="navigation__link">about</a>
+              <a href="#feature" class="navigation__link">about</a>
           </li>
           <li class="navigation__item">
-              <a href="#" class="navigation__link">reviews</a>
+              <a href="#featue-list" class="navigation__link">reviews</a>
           </li>
           <li class="navigation__item">
-              <a href="#" class="navigation__link">contact us</a>
+              <a href="#contact-us" class="navigation__link">contact us</a>
           </li>
       </ul>
     </div>
@@ -39,7 +43,7 @@
 <!-- end navbar -->
 
 <!-- start header -->
-<div class="header">
+<section class="header" id="header">
   <div class="header__container">
     <div class="header__content">
       <img src="./images/bannerlogo.png" alt="header logo">
@@ -51,35 +55,115 @@
       <img src="./images/macbook.png" alt="header mockup">
     </div>
   </div>
-</div>
+</section>
 <!-- start header -->
 
 <!-- start feature -->
-<div class="feature">
+<section class="feature" id="feature">
   <div class="feature__container">
     <div class="feature__content">
       <div class="feature__tabs">
         <ul>
-          <li class="tab__item active-tab">tab 1</li>
-          <li class="tab__item">tab 2</li>
-          <li class="tab__item">tab 3</li>
+          <li data-content=".content-one" class="tab__item active-tab">tab 1</li>
+          <li data-content=".content-two" class="tab__item">tab 2</li>
+          <li data-content=".content-three" class="tab__item">tab 3</li>
         </ul>
       </div>
       <div class="feature__tabs-content">
-        <h2 class="feature__tabs-title">adam.ai youy intellegent meeting assistant</h2>
-        <p>typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make</p>
-        <p>typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make</p>
-        <button>download</button>
+        <div class="content-one">
+          <h2 class="feature__tabs-title">adam.ai youy intellegent meeting assistant</h2>
+          <p>typesetting industry.  took a galley of type and scrambled it to make typesetting industry.  took a galley of type and scrambled it to make</p>
+          <p>typesetting industry. Lorem Ipsum has been the industry's standard dummy typesetting industry.  took a galley of type and scrambled it to make text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make</p>
+          <button>download</button>  
+        </div>
+        <div class="content-two">
+          <h2 class="feature__tabs-title">adam.ai youy intellegent meeting assistant</h2>
+          <p>typesetting industry.  took a galley of type and scrambled it to make typesetting industry.  took a galley of type and scrambled it to make</p>
+          <p>typesetting industry. Lorem Ipsum has been the industry's standard dummy typesetting industry.  took a galley of type and scrambled it to make text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make</p>
+          <button>download</button>  
+        </div>
+        <div class="content-three">
+          <h2 class="feature__tabs-title">adam.ai youy intellegent meeting assistant</h2>
+          <p>typesetting industry.  took a galley of type and scrambled it to make typesetting industry.  took a galley of type and scrambled it to make</p>
+          <p>typesetting industry. Lorem Ipsum has been the industry's standard dummy typesetting industry.  took a galley of type and scrambled it to make text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make</p>
+          <button>download</button>  
+        </div>
       </div>
     </div>
     <div class="feature__mockup">
       <img src="./images/mob.png" alt="feature mockup">
     </div>
   </div>
-</div>
+</section>
 <!-- end feature -->
 
+<!-- start feature list -->
+<section class="featue-list" id="featue-list">
+  <div class="featue-list__img">
+    <img src="./images/review.jpg" alt="" >
+  </div>
+  <div class="featue-list__content">
+    <h2 class="featue-list__title">Feature list section</h2>
+    <p class="featue-list__quote">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer</p>
+    <div class="feature-list__list">
+      <div class="feature-list__list--item">
+        <img src="./images/icon/upload.svg" alt="upload">
+        <div>
+          <h3>title</h3>
+          <p>Lorem Ipsum has been the industry's standard dummy text ever </p>
+        </div>
+      </div>
+      <div class="feature-list__list--item">
+        <img src="./images/icon/download.svg" alt="upload">
+        <div>
+          <h3>title</h3>
+          <p>Lorem Ipsum has been the industry's standard dummy text ever Lorem Ipsum has been the industry's standard dummy text ever</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end feature list -->
+
+<!-- start contact us -->
+<section class="contact-us" id="contact-us">
+  <h2 class="contact-us__title">contact us</h2>
+  <p class="contact-us__quote">Lorem Ipsum has been the industry's standard dummy text ever</p>
+  <form action="">
+    <div class="form__container">
+      <div class="contatct-us__personal-info">
+        <input type="text" required name="name" id="email" placeholder="Name">
+        <input type="email" required name="Email" id="email" placeholder="Email*">
+        <input type="text" required name="subject" id="email" placeholder="Subject*">
+      </div>
+      <div class="contatct-us__message">
+        <textarea maxlength="1000" name="message" id="message" placeholder="Message*"></textarea>
+        <div class="massege"></div>
+      </div>
+  </div>
+    <div style="text-align: center;">
+      <button class="btn" type="submit">submit</button>
+    </div>
+  </form>
+</section>
+<!-- end contact us -->
+
+<!-- start copyright -->
+<footer class="copyright">
+  <p>&copy; 2020 all right reserved</p>
+  <div class="social-icon">
+    <a href="#"><img src="./images/icon/facebook.svg" alt="facebook"></a>
+    <a href="#"><img src="./images/icon/twitter.svg" alt="twitter"></a>
+    <a href="#"><img src="./images/icon/instagram.svg" alt="instagram"></a>
+    <a href="#"><img src="./images/icon/google-plus.svg" alt="google-plus"></a>
+    <a href="#"><img src="./images/icon/pinterest.svg" alt="pinterest"></a>
+    <a href="#"><img src="./images/icon/youtube.svg" alt="youtube"></a>
+  </div>
+</footer>
+<!-- end copyright -->
+
 <script src="./js/jquery-3.2.1.min.js"></script>
+<script src="./js/smooth-scroll.min.js"></script>
 <script src="./js/main.js"></script>
 </body>
 </html>
